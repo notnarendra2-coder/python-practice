@@ -1,0 +1,35 @@
+import random
+
+option = "s","w","g"
+
+computer = random.choice(option)
+
+user = input("Enter You Choice(s/w/g):")
+dict = {"s":"snake","w":"water","g":"gun"}
+print(f"you chose:{dict[user]}\ncomputer chose:{dict[computer]}")
+
+if computer == user:
+        print("matche is draw!")
+
+else:
+    if computer=="s" and user=="w":
+        print("you lost!")
+        
+    elif computer=="s" and user=="g":
+        print("you win!")
+
+    elif computer=="w" and user=="s":
+        print("you win!")
+
+    elif computer=="w" and user=="g":
+        print("you lost!")
+
+    elif computer=="g" and user=="s":
+         print("you lost!")
+
+    elif computer=="g" and user=="w":
+         print("you win!")
+
+
+
+         
